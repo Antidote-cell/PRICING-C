@@ -1,0 +1,111 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px 0px;
+}
+div.head, div.a-box{
+    text-align: center; margin: 10px;
+}
+p, h4, span{
+margin: 0px;
+}
+a{
+    font-weight: bold;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+p.pricing{
+    font-weight: bold;
+}
+p.simple{
+    font-size: 17px;
+}
+.a-box{
+    background-color: #aeb2b6; width:fit-content;
+    border-radius: 7px;display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5px;
+}
+button.b-sub{
+    background-color: white;cursor: pointer;
+    border: none; border-radius: 6px; padding: 10px; margin: 5px;
+}
+button.b-paid{
+    background-color: #aeb2b6; cursor: pointer;
+    border: none; border-radius: 6px; padding: 10px; margin: 5px;
+}
+button.b-paid:hover{
+    background-color: white;
+}
+div.intro-body{
+    margin: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    border: 2px solid black; border-radius: 15px;
+    padding: 20px 30px;
+}
+span{
+    font-size: 25px; font-weight: 600;
+}
+h5{
+    margin: 20px;
+}
+.free:nth-of-type(1),
+.free:nth-of-type(2),
+.free:nth-of-type(3){
+    border-right: 2px solid black;
+}
+.free{
+    margin: 0px 7px;
+}
+button.f-download{
+    background-color: black;
+    padding: 8px;
+    color: white;
+    margin: 10px 0px; font-weight: 400;
+}
+li{
+    line-height: 20px;
+}
+h4{
+    margin: 15px 0px;
+}
+.f-text{
+    margin-bottom: 10px;
+}
+h5{
+    height: 18px;
+}
+
+@media (max-width:930px) {
+    div.intro-body{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        border: 2px solid black; border-radius: 15px;
+    }
+
+    .free:nth-of-type(1),
+    .free:nth-of-type(3){
+    border-right: 2px solid black;
+}
+.free:nth-of-type(2) {
+    border: none;
+}
+}
+
+.free ul{
+    list-style: none;
+}
+
+@media (max-width:620px) {
+    div.intro-body{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        border: 2px solid black; border-radius: 15px;
+    }
+
+    .free:nth-of-type(1),
+    .free:nth-of-type(3){
+    border-right: none;
+}}
